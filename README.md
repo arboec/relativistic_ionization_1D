@@ -1,4 +1,4 @@
-# relativistic_ionization_1D
+# The scaling method ofr 1D FW equation
 Supplimentary meterials for the article
 
 This code solves a modified FW equation in scaling coordinates. The details of the algorithm can be found in a corresponding paper (submitted to computer physics communications). The code was run for a particular set of parameters using MATLAB R2022b version. The code is provided  as a supplimentary material to the article and is not intended to be a stand-alone program. You are free to use or modify the code, however, the author does not guarantee the correctness of the results.
