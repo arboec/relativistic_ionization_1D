@@ -30,11 +30,13 @@ mder1.m, mder2.m – calculates the derivatives d m(x) / dx and d^2 m(x) / dx^2
 m*L.m – corresponding versions of functions described above, but for an extended grid.
  
 ==========
+
 R.m – scaling factor. Input parameters: (t = time, v = group velocity).
 
 Rd.m – time derivative of R: d R(t) / dt.
 
 ==========
+
 evolvePotential.m – calculates exp(-i*dt*V*0.5), i.e. propagates a wavefunction in time under the influence of potential.
 
 calcV.m – calculates a central potential.
@@ -44,6 +46,7 @@ calcVAbsorb.m – calculates an absorbing potential on the boundaries.
 calcVder2.m – calculates a second derivative of the central potential, d^2 V(x) / dx^2.
 
 ==========
+
 evolveKinetic.m – calculates exp(-i*dt*K), i.e. propagates a wavefunction in time under the influence of the kinetic operator. Based on Krylov-Arnoldi scheme.
 
 expmArnoldi.m – calculates a matrix exponent using Krylov-Arnoldi algorithm.
@@ -55,12 +58,14 @@ calculateCoefficients.m – calculates coefficients, i.e. values of T_0(x,t), T_
 darwinTerm_formula – calcualtes a contribution from Darwin-Spin-Orbital term. Used by applyOperator.m In practices, does not influence the results due to its small magnitude for the tested paramteres.
 
 ==========
+
 calcA.m – calculates an electro-magnetic vector potential A.
 calcExactSolutionA.m – calculates a phase of an exact free (without central potential) solution in form of \int_0^t sqrt(1+(p-A/c)^2/c^2)).
 
 calcPhaseL.m – calculates a phase to be cancelled using the results, produced by calcExactSolutionA.m.
 
 ==========
+
 calcProjections.m – calculates projections of the wave function to the spinors, which correspond to either positive or negative energies.
 
 derivative_pr.m – calculates a derivative of a function provided on  a non-uniform mesh.
