@@ -10,6 +10,7 @@ run.m – the main script, which runs the computations
 post_analysis.m – a routine to plot some graphs after run.m finishes.
 
 ==========
+
 initializeGrid.m – initializes a uniform grid. Input parameters: (N = number of nods, L = length of the grid)
 
 initializePGrid_pr.m – initializes a grid in momentum (Fourier) space, which corresponds to the grid in a coordinate space, provided by initializeGrid.m. Input parameters: (N = numer of nods, L = length of the corresponding grid in coordinate space)
@@ -21,6 +22,7 @@ InitializeSystemConstants.m – initializes initial conditions, such as number o
 InitializeWaveFunction.m – creates an initial wave function. Input parameters:(FILENAME_RE = input file for Re() part of wavefunction,FILENAME_IM = input file for Im() part of wavefunction , N = number of grid knots)
 
 ==========
+
 m.m, mInv.m – a map from computational (uniform) coordinates to physical (non-uniform) ones.  Minv denotes an inverse transform == m^{-1}.
 
 mder1.m, mder2.m – calculates the derivatives d m(x) / dx and d^2 m(x) / dx^2
