@@ -1,5 +1,5 @@
 # relativistic_ionization_1D
-Supplimentary meterials for the article
+Supplementary materials for the article
 
 There are 2 branches:
 1) The solution of time-dependent Dirac equation via a regular split-operator approach (Dirac)
