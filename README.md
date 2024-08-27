@@ -7,14 +7,16 @@ The code implements a basic split-operator approach for the solution of TDDE.
 
 Structure:
 
-======
+<b>======</b>
 
 run.m -- a main scrupt, lauches the computations.
 
-=====
+<b>======</b>
 
 calcA.m -- function, calculates an electro-magnetic vector potential A.
+
 calcV.m -- function, calculates a central potential for a given grid.
+
 calcVAbsorb.m -- function, calculates an absorbing potential on the boundaries of the mesh.
 
-=====
+<b>======</b>
