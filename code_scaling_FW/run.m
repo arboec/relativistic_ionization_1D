@@ -37,7 +37,7 @@ N0 = N;
 tic
 while (t <= 9.425)%4*T  8*T %3*pi 9.425
 
-      if (counterVisual == counterRefining)%39000)
+      if (counterVisual == counterRefining) % triggers mesh refinement
         t
         muP = fftshift(fft(ifftshift(mu)));
         M = 2*floor(1.05*N*0.5);
@@ -66,7 +66,7 @@ while (t <= 9.425)%4*T  8*T %3*pi 9.425
     mu = evolveKinetic(mu,phaseL,phaseLOld,N,xi,pXi,TOL_ARNOLDI,M_ARNOLDI,dt,t,v,c,T,L);
     mu = evolvePotential(v,t,dt,xi,mu,0.5,N);
 
-    if (abs(mod(counterVisual,500)) == 0) %125
+    if (abs(mod(counterVisual,500)) == 0) % triggers computation of averages, such as <x> or share of positive/negative states
       t
       %spectrum_ravnomer(xi,phaseL,mu,t,v,pXi,L);
       rho = mu.*conj(mu);
